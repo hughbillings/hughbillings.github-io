@@ -1,0 +1,281 @@
+
+/* Variables */
+:root{
+	--base: #ddd ;
+	--light: #fff ;
+	--dark:#333;
+	--shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body{
+	background: #FEF9C7;
+}
+
+hr{
+	margin: 10px 10px;
+	color: var(--shadow);
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+.wrap{
+	display: grid;
+	grid-gap: 1.3rem;
+	grid-template-columns: 100px 1fr 1fr 2fr;
+	grid-template-rows: 250px 1fr 1fr 2fr;
+	grid-template-areas: 
+	'head head head head head'
+	'... boxa boxb boxb boxb'
+	'... boxa boxb boxb boxb'
+	'... boxa boxb boxb boxb'
+	
+	
+	
+}
+
+/* Main Navigation - Header */
+
+.main-nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background: #1F2833;
+	color: #66FCF1;
+	padding: 4rem 3rem;
+	margin: 1.2rem 1rem 0rem 2rem;
+	box-shadow: var(--shadow);
+	grid-area: head
+}
+
+
+
+.main-nav > div{
+	border: 1px solid white;
+	padding: 1rem 1rem;
+	
+}
+
+.main-nav h1{
+	font-family: 'Cinzel', serif;
+	text-align: center;
+	letter-spacing: 2px;
+
+}
+
+.profilepicture{
+	padding: 5rem 4rem;
+
+}
+
+
+.main-nav h4 {
+	font-family: 'Glegoo',serif;
+}
+
+
+
+
+
+
+/* BOX A */
+
+.box-a{
+	display: block;
+	background: #4D6D9A;
+	color:var(--dark);
+	box-shadow: var(--shadow);
+	grid-area: boxa;
+}
+
+
+
+.box-a h2 {
+	line-height: 2;
+	font-family: 'Pridi', serif;
+	margin-left: 5px;
+}
+
+
+.box-a img{
+	padding: 20px 30px;
+	width: 250px;
+	height: 190px;
+	border-radius: 230px ;
+}
+
+.box-a a{
+	font-family: 'Oranienbaum', serif;
+	text-decoration: none;
+	color: var(--dark);
+}
+
+.box-a a:hover{
+	color:var(--light);
+}
+
+/* CONTACT */
+
+
+.contact-container{
+	display: flex;
+	flex-direction: column;
+	padding: 0px 10px;
+	margin-left: 20px;	
+}
+
+.contact-container > div {
+	line-height: 2;
+	word-spacing: 10px;
+	
+}
+
+
+.phone{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.phone p {
+	margin-left: 19px;
+}
+
+.contact p {
+	font-family: "Times New Roman", Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+
+/* SOCIAL MEDIA */
+
+
+.social-container{
+	display: flex;
+	flex-direction: column;
+	padding: 0px 10px;
+	margin-left: 20px;	
+}
+
+.social-container > div{
+	line-height: 2;
+	word-spacing: 10px;
+}
+.social-media a{
+	text-decoration: none;
+	color: var(--dark);
+}
+
+
+
+
+/* BOX B */
+
+.box-b {
+	display: block;
+	padding: 0px 10px;
+	grid-area: boxb;
+	width:85%;
+	
+	
+}
+
+.box-b h2{
+	font-family: 'Pridi', serif;
+}
+
+
+.box-b > div{
+	margin-bottom: 60px;
+}
+
+/* BIOGRAPHY */
+
+.biography {
+	
+
+}
+
+.biography p {
+	padding: 10px 30px;
+	font-family: 'Satisfy', cursive;
+	font-style: oblique;
+
+}
+
+.info-container{
+	display: flex;
+	flex-direction: column;
+	padding: 10px 30px;
+	
+}
+
+.info-container > div {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+
+	
+}
+
+.info-container p{
+	font-family: 'Glegoo', serif;
+}
+
+.description {
+	margin-left: 120px;
+	font-family: cursive;
+}
+
+
+.info-container h4 {
+	margin-right: 30px;
+}
+
+
+/* Education */
+
+.education-container{
+	display: flex;
+	flex-direction: column;
+	padding: 10px 30px;
+}
+
+.education-container > div {
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+}
+
+.education-container h4 {
+	margin-right: 30px;
+}
+
+.education-container p{
+	font-family: 'Glegoo',serif;
+}
+
+
+/* Skill */
+
+.skill-container {
+	padding: 10px 45px;
+}
+
+.skill-container li{
+	font-family: cursive;
+}
+
